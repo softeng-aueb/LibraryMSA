@@ -1,4 +1,4 @@
-package com.mgiandia.library.loans.domain;
+package com.mgiandia.library.catalog.domain;
 
 import jakarta.persistence.*;
 

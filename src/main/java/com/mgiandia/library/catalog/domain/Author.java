@@ -1,12 +1,10 @@
-package com.mgiandia.library.loans.domain;
+package com.mgiandia.library.catalog.domain;
 
 import java.util.HashSet;
 import java.util.Set;
+
 import jakarta.persistence.*;
 
-
-
- 
 /**
  * Ο Συγγραφέας.
  * @author Νίκος Διαμαντίδης

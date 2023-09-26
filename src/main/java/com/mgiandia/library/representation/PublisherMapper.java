@@ -1,6 +1,6 @@
 package com.mgiandia.library.representation;
 
-import com.mgiandia.library.loans.domain.Publisher;
+import com.mgiandia.library.catalog.domain.Publisher;
 import org.mapstruct.InjectionStrategy;
 import org.mapstruct.Mapper;
 

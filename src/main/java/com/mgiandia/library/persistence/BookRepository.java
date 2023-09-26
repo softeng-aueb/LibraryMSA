@@ -5,7 +5,7 @@ import java.util.List;
 
 import jakarta.enterprise.context.RequestScoped;
 
-import com.mgiandia.library.loans.domain.Book;
+import com.mgiandia.library.catalog.domain.Book;
 
 import io.quarkus.hibernate.orm.panache.PanacheRepositoryBase;
 import io.quarkus.panache.common.Parameters;

@@ -1,9 +1,10 @@
-package com.mgiandia.library.loans.domain;
+package com.mgiandia.library.catalog.domain;
 
 import java.util.HashSet;
 import java.util.Set;
 
 
+import com.mgiandia.library.loans.domain.Item;
 import jakarta.persistence.*;
 
 
@@ -24,7 +25,7 @@ public class Book {
     @org.hibernate.annotations.Type(
             value=com.mgiandia.library.persistence.ISBNCustomType.class)
     @Column(name="isbn", length = 20, nullable=false)
-    private ISBN isbn;  
+    private ISBN isbn;
     
     @Column(name="title", length=200, nullable=false)
     private String title;
@@ -215,7 +216,7 @@ public class Book {
      * Μη ενθυλακωμένη συλλογή των αντιτύπων του βιβλίου.
      * @return Τα αντίτυπα του βιβλίου
      */
-    Set<Item> friendItems() {
+    public Set<Item> friendItems() {
         return items;
     }
 

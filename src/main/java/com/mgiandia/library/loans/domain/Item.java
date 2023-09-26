@@ -1,5 +1,6 @@
 package com.mgiandia.library.loans.domain;
 
+import com.mgiandia.library.catalog.domain.Book;
 import jakarta.persistence.*;
 
 import com.mgiandia.library.LibraryException;

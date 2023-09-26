@@ -1,6 +1,8 @@
-package com.mgiandia.library.loans.domain;
+package com.mgiandia.library.catalog.domain;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Embeddable;
+
 /**
  * Η βασική κλάση του προσώπου.
  * @author Νίκος Διαμαντίδης
