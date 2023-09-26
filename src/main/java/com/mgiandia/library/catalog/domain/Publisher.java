@@ -2,11 +2,6 @@ package com.mgiandia.library.catalog.domain;
 
 import jakarta.persistence.*;
 
-import com.mgiandia.library.loans.contacts.Address;
-import com.mgiandia.library.loans.contacts.EmailAddress;
-import com.mgiandia.library.loans.contacts.TelephoneNumber;
-
-
 /**
  * Ο εκδοτικός οίκος.
  * @author Νίκος Διαμαντίδης
