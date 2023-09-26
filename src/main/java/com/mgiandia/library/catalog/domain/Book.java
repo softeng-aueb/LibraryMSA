@@ -1,10 +1,13 @@
 package com.mgiandia.library.catalog.domain;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 
 import com.mgiandia.library.loans.domain.Item;
+import com.mgiandia.library.loans.domain.ItemState;
 import jakarta.persistence.*;
 
 
@@ -271,4 +274,14 @@ public class Book {
     public int hashCode() {
         return isbn == null ? 0 : isbn.hashCode();
     }
- }
+
+    public List<Item> getAvailableItems() {
+        List<Item> availableItems = new ArrayList<>();
+        for(Item i: items){
+            if (i.getState().equals(ItemState.AVAILABLE)){
+                availableItems.add(i);
+            }
+        }
+        return availableItems;
+    }
+}
