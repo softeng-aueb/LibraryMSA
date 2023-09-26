@@ -1,7 +1,7 @@
 package com.mgiandia.library.representation;
 
 
-import com.mgiandia.library.domain.BorrowerCategory;
+import com.mgiandia.library.loans.domain.BorrowerCategory;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.InjectionStrategy;

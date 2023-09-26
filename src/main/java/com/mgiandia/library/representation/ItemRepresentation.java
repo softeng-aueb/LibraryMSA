@@ -1,6 +1,6 @@
 package com.mgiandia.library.representation;
 
-import com.mgiandia.library.domain.ItemState;
+import com.mgiandia.library.loans.domain.ItemState;
 
 import io.quarkus.runtime.annotations.RegisterForReflection;
 

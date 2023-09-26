@@ -1,6 +1,6 @@
 package com.mgiandia.library.service;
 
-import com.mgiandia.library.contacts.EmailMessage;
+import com.mgiandia.library.loans.contacts.EmailMessage;
 
 /**
  * Παροχή υπηρεσίας ηλεκτρονικού ταχυδρομείου.

@@ -1,7 +1,7 @@
 package com.mgiandia.library.representation;
 
-import com.mgiandia.library.domain.Borrower;
-import com.mgiandia.library.domain.BorrowerCategory;
+import com.mgiandia.library.loans.domain.Borrower;
+import com.mgiandia.library.loans.domain.BorrowerCategory;
 import com.mgiandia.library.persistence.BorrowerCategoryRepository;
 
 import org.mapstruct.AfterMapping;
@@ -14,7 +14,7 @@ import java.util.List;
 
 import jakarta.inject.Inject;
 
-import com.mgiandia.library.contacts.EmailAddress;
+import com.mgiandia.library.loans.contacts.EmailAddress;
 
 @Mapper(componentModel = "jakarta",
 		injectionStrategy = InjectionStrategy.CONSTRUCTOR,

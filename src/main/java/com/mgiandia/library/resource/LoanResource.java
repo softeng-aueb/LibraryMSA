@@ -10,7 +10,7 @@ import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.core.Response;
 
-import com.mgiandia.library.domain.Loan;
+import com.mgiandia.library.loans.domain.Loan;
 import com.mgiandia.library.persistence.LoanRepository;
 import com.mgiandia.library.representation.LoanMapper;
 import com.mgiandia.library.representation.LoanRepresentation;

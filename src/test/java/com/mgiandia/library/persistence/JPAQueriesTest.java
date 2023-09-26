@@ -6,7 +6,7 @@ import jakarta.inject.Inject;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.Query;
 
-import com.mgiandia.library.domain.Book;
+import com.mgiandia.library.loans.domain.Book;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

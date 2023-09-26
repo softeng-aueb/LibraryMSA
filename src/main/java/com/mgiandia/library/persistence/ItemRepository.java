@@ -3,7 +3,7 @@ package com.mgiandia.library.persistence;
 
 import jakarta.enterprise.context.RequestScoped;
 
-import com.mgiandia.library.domain.Item;
+import com.mgiandia.library.loans.domain.Item;
 
 import io.quarkus.hibernate.orm.panache.PanacheRepositoryBase;
 

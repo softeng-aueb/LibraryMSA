@@ -20,7 +20,7 @@ import jakarta.ws.rs.core.Response;
 import jakarta.ws.rs.core.UriBuilder;
 import jakarta.ws.rs.core.UriInfo;
 
-import com.mgiandia.library.domain.Borrower;
+import com.mgiandia.library.loans.domain.Borrower;
 import com.mgiandia.library.persistence.BorrowerRepository;
 import com.mgiandia.library.representation.BorrowerMapper;
 import com.mgiandia.library.representation.BorrowerRepresentation;

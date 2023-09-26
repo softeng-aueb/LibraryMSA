@@ -4,7 +4,7 @@ package com.mgiandia.library.persistence;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.persistence.NoResultException;
 
-import com.mgiandia.library.domain.Borrower;
+import com.mgiandia.library.loans.domain.Borrower;
 
 import io.quarkus.hibernate.orm.panache.PanacheQuery;
 import io.quarkus.hibernate.orm.panache.PanacheRepositoryBase;

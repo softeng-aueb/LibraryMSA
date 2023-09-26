@@ -5,7 +5,7 @@ import static io.restassured.RestAssured.when;
 import com.mgiandia.library.Fixture;
 import com.mgiandia.library.Fixture.Items;
 import com.mgiandia.library.IntegrationBase;
-import com.mgiandia.library.domain.ItemState;
+import com.mgiandia.library.loans.domain.ItemState;
 import com.mgiandia.library.representation.ItemRepresentation;
 import com.mgiandia.library.representation.LoanRepresentation;
 
