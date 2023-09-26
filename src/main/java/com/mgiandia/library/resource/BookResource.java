@@ -6,7 +6,9 @@ import java.util.List;
 
 import com.mgiandia.library.catalog.domain.Book;
 import com.mgiandia.library.loans.domain.Item;
+import com.mgiandia.library.loans.service.CatalogService;
 import com.mgiandia.library.persistence.BookRepository;
+import com.mgiandia.library.persistence.ItemRepository;
 import com.mgiandia.library.representation.BookMapper;
 import com.mgiandia.library.representation.BookRepresentation;
 
@@ -35,12 +37,18 @@ public class BookResource {
 	
 	@Inject 
 	BookRepository bookRepository;
+
+	@Inject
+	ItemRepository itemRepository;
 	
 	@Inject
 	BookMapper bookMapper;
 
 	@Inject
 	ItemMapper itemMapper;
+
+	@Inject
+	CatalogService catalogService;
 
 	@GET
 	@Path("{bookId:[0-9]*}")
@@ -74,7 +82,8 @@ public class BookResource {
 			throw new NotFoundException("Book not found");
 		}
 
-		List<Item> availableItems = book.getAvailableItems();
+		List<Item> items = itemRepository.findAssociatedItemsForBook(book.getId());
+		List<Item> availableItems = catalogService.getAvailableItems(items);
 
 		return itemMapper.toRepresentationList(availableItems);
 	}
