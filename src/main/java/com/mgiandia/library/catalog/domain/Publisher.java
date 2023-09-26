@@ -1,5 +1,8 @@
 package com.mgiandia.library.catalog.domain;
 
+import com.mgiandia.library.catalog.contacts.Address;
+import com.mgiandia.library.catalog.contacts.EmailAddress;
+import com.mgiandia.library.catalog.contacts.TelephoneNumber;
 import jakarta.persistence.*;
 
 /**

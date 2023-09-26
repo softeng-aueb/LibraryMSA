@@ -1,4 +1,4 @@
-package com.mgiandia.library.catalog.domain;
+package com.mgiandia.library.catalog.contacts;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;

@@ -1,4 +1,4 @@
-package com.mgiandia.library.catalog.domain;
+package com.mgiandia.library.catalog.contacts;
 
 import java.io.Serializable;
 
