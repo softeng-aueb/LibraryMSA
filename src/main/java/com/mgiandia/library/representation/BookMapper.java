@@ -2,7 +2,7 @@ package com.mgiandia.library.representation;
 
 import java.util.List;
 
-import com.mgiandia.library.domain.Book;
+import com.mgiandia.library.loans.domain.Book;
 
 import org.mapstruct.InjectionStrategy;
 import org.mapstruct.Mapper;

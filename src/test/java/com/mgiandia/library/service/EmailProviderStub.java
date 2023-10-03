@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-import com.mgiandia.library.contacts.EmailMessage;
+import com.mgiandia.library.loans.contacts.EmailMessage;
 
 /**
  * Η κλάση είναι ένα στέλεχος που χρησιμοποιείται αντί

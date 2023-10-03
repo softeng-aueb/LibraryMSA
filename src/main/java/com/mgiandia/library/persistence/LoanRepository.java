@@ -6,7 +6,7 @@ import java.util.List;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.persistence.NoResultException;
 
-import com.mgiandia.library.domain.Loan;
+import com.mgiandia.library.loans.domain.Loan;
 
 import io.quarkus.hibernate.orm.panache.PanacheQuery;
 import io.quarkus.hibernate.orm.panache.PanacheRepositoryBase;

@@ -18,9 +18,9 @@ import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import jakarta.ws.rs.core.UriBuilder;
 
-import com.mgiandia.library.domain.Borrower;
-import com.mgiandia.library.domain.Item;
-import com.mgiandia.library.domain.Loan;
+import com.mgiandia.library.loans.domain.Borrower;
+import com.mgiandia.library.loans.domain.Item;
+import com.mgiandia.library.loans.domain.Loan;
 import com.mgiandia.library.persistence.BorrowerRepository;
 import com.mgiandia.library.persistence.ItemRepository;
 import com.mgiandia.library.persistence.LoanRepository;

@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import org.hibernate.engine.spi.SharedSessionContractImplementor;
 import org.hibernate.usertype.UserType;
 
-import com.mgiandia.library.contacts.ZipCode;
+import com.mgiandia.library.loans.contacts.ZipCode;
 
 public class ZipCodeCustomType implements UserType<ZipCode> {
 

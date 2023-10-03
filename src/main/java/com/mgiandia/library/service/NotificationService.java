@@ -7,11 +7,11 @@ import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
 
 import com.mgiandia.library.LibraryException;
-import com.mgiandia.library.contacts.EmailAddress;
-import com.mgiandia.library.contacts.EmailMessage;
-import com.mgiandia.library.domain.Book;
-import com.mgiandia.library.domain.Borrower;
-import com.mgiandia.library.domain.Loan;
+import com.mgiandia.library.loans.contacts.EmailAddress;
+import com.mgiandia.library.loans.contacts.EmailMessage;
+import com.mgiandia.library.loans.domain.Book;
+import com.mgiandia.library.loans.domain.Borrower;
+import com.mgiandia.library.loans.domain.Loan;
 import com.mgiandia.library.persistence.LoanRepository;
 
 /**
