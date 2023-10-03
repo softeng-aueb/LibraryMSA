@@ -2,6 +2,8 @@ package com.mgiandia.library.loans.domain;
 
 import java.util.HashSet;
 import java.util.Set;
+
+import com.mgiandia.library.catalog.domain.Book;
 import jakarta.persistence.*;
 
 

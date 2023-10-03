@@ -2,10 +2,7 @@ package com.mgiandia.library.loans.domain;
 
 
 
-import com.mgiandia.library.loans.domain.Author;
-import com.mgiandia.library.loans.domain.Book;
-import com.mgiandia.library.loans.domain.Item;
-import com.mgiandia.library.loans.domain.ItemState;
+import com.mgiandia.library.catalog.domain.Book;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
