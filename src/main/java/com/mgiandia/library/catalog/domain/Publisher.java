@@ -1,4 +1,4 @@
-package com.mgiandia.library.loans.domain;
+package com.mgiandia.library.catalog.domain;
 
 import com.mgiandia.library.loans.contacts.Address;
 import com.mgiandia.library.loans.contacts.EmailAddress;

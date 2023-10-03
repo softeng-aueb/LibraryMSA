@@ -1,6 +1,7 @@
 package com.mgiandia.library.loans.domain;
 
 
+import com.mgiandia.library.catalog.domain.Author;
 import com.mgiandia.library.catalog.domain.Book;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

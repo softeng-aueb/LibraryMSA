@@ -4,10 +4,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 
-import com.mgiandia.library.loans.domain.Author;
 import com.mgiandia.library.loans.domain.ISBN;
 import com.mgiandia.library.loans.domain.Item;
-import com.mgiandia.library.loans.domain.Publisher;
 import jakarta.persistence.*;
 
 

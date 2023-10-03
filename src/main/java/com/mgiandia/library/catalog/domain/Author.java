@@ -1,9 +1,9 @@
-package com.mgiandia.library.loans.domain;
+package com.mgiandia.library.catalog.domain;
 
 import java.util.HashSet;
 import java.util.Set;
 
-import com.mgiandia.library.catalog.domain.Book;
+//import com.mgiandia.library.loans.domain.Person;
 import jakarta.persistence.*;
 
 
