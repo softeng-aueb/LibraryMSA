@@ -3,8 +3,6 @@ package com.mgiandia.library.catalog.contacts;
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 
-//must be deleted at later stage
-import com.mgiandia.library.loans.contacts.ZipCode;
 
 /**
  * Η ταχυδρομική διεύθυνση.
