@@ -11,6 +11,10 @@ import com.mgiandia.library.util.SystemDate;
  * @author Νίκος Διαμαντίδης
  *
  */
+@NamedQuery(
+        name="itemsByBookId",
+        query="SELECT i FROM Item i WHERE i.book.id = :bookId"
+)
 @Entity
 @Table(name="items")
 public class Item {
