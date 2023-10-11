@@ -5,6 +5,7 @@ import java.util.List;
 
 
 import com.mgiandia.library.loans.contacts.EmailMessage;
+import com.mgiandia.library.loans.service.EmailProvider;
 
 /**
  * Η κλάση είναι ένα στέλεχος που χρησιμοποιείται αντί
@@ -17,7 +18,7 @@ import com.mgiandia.library.loans.contacts.EmailMessage;
  *  
  * @author Νίκος Διαμαντίδης
  */ 
-public class EmailProviderStub implements EmailProvider{
+public class EmailProviderStub implements EmailProvider {
 
     List<EmailMessage> allMessages = new ArrayList<EmailMessage>(); 
     

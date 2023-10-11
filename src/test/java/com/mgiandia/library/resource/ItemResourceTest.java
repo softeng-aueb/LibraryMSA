@@ -5,12 +5,12 @@ import static io.restassured.RestAssured.when;
 import com.mgiandia.library.Fixture;
 import com.mgiandia.library.Fixture.Items;
 import com.mgiandia.library.IntegrationBase;
-import com.mgiandia.library.representation.ItemRepresentation;
+import com.mgiandia.library.loans.representation.ItemRepresentation;
 
+import com.mgiandia.library.loans.resource.LibraryUri;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import io.quarkus.test.TestTransaction;
 import io.quarkus.test.junit.QuarkusTest;
 
 @QuarkusTest

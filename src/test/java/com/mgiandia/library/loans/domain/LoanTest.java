@@ -1,17 +1,16 @@
 package com.mgiandia.library.loans.domain;
 
 
-import com.mgiandia.library.loans.domain.Borrower;
-import com.mgiandia.library.loans.domain.BorrowerCategory;
-import com.mgiandia.library.loans.domain.Item;
-import com.mgiandia.library.loans.domain.Loan;
+import com.mgiandia.library.loans.util.Money;
+import com.mgiandia.library.loans.util.SystemDate;
+import com.mgiandia.library.loans.util.SystemDateStub;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 import java.time.LocalDate;
 
-import com.mgiandia.library.util.*;
+import com.mgiandia.library.loans.util.*;
 
 public class LoanTest {
     

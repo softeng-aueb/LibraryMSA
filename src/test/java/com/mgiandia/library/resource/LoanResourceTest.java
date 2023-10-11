@@ -6,9 +6,10 @@ import com.mgiandia.library.Fixture;
 import com.mgiandia.library.Fixture.Items;
 import com.mgiandia.library.IntegrationBase;
 import com.mgiandia.library.loans.domain.ItemState;
-import com.mgiandia.library.representation.ItemRepresentation;
-import com.mgiandia.library.representation.LoanRepresentation;
+import com.mgiandia.library.loans.representation.ItemRepresentation;
+import com.mgiandia.library.loans.representation.LoanRepresentation;
 
+import com.mgiandia.library.loans.resource.LibraryUri;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

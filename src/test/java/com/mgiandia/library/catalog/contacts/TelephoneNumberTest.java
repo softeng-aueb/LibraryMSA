@@ -1,7 +1,7 @@
 package com.mgiandia.library.catalog.contacts;
 
 import com.mgiandia.library.loans.contacts.TelephoneNumber;
-import com.mgiandia.library.util.BasicEqualTester;
+import com.mgiandia.library.loans.util.BasicEqualTester;
 import org.junit.jupiter.api.Test;
 
 public class TelephoneNumberTest {

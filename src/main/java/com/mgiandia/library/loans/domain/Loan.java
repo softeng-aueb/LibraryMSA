@@ -3,9 +3,9 @@ package com.mgiandia.library.loans.domain;
 
 import jakarta.persistence.*;
 
-import com.mgiandia.library.LibraryException;
-import com.mgiandia.library.util.Money;
-import com.mgiandia.library.util.SystemDate;
+import com.mgiandia.library.loans.LibraryException;
+import com.mgiandia.library.loans.util.Money;
+import com.mgiandia.library.loans.util.SystemDate;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;

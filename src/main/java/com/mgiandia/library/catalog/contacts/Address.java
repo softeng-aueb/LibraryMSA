@@ -1,5 +1,6 @@
 package com.mgiandia.library.catalog.contacts;
 
+import com.mgiandia.library.loans.persistence.ZipCodeCustomType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 
@@ -21,7 +22,7 @@ public class Address {
     private String city;
     
     @org.hibernate.annotations.Type(
-            value=com.mgiandia.library.persistence.ZipCodeCustomType.class)
+            value= ZipCodeCustomType.class)
     private ZipCode zipcode;
     
     @Column(name="country", length=50)

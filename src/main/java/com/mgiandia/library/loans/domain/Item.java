@@ -3,8 +3,8 @@ package com.mgiandia.library.loans.domain;
 import com.mgiandia.library.catalog.domain.Book;
 import jakarta.persistence.*;
 
-import com.mgiandia.library.LibraryException;
-import com.mgiandia.library.util.SystemDate;
+import com.mgiandia.library.loans.LibraryException;
+import com.mgiandia.library.loans.util.SystemDate;
 
 /**
  * Το αντίτυπο ενός βιβλίου.
@@ -13,7 +13,7 @@ import com.mgiandia.library.util.SystemDate;
  */
 @NamedQuery(
         name="itemsByBookId",
-        query="SELECT i FROM Item i WHERE i.book.id = :bookId"
+        query="SELECT i FROM Item i WHERE i.bookId = :bookId"
 )
 @Entity
 @Table(name="items")
@@ -22,11 +22,14 @@ public class Item {
     @Column(name="itemno")
     private int itemNumber = 0;
     
-    @ManyToOne(fetch=FetchType.LAZY, 
+    /*@ManyToOne(fetch=FetchType.LAZY,
             cascade= {CascadeType.PERSIST, CascadeType.MERGE}    
             ) 
     @JoinColumn(name="bookno")
-    private Book book;
+    private Book book;*/
+
+    @Column(name="bookId")
+    private Integer bookId;
     
     @Enumerated(EnumType.STRING)
     @Column(name="itemstate")
@@ -71,7 +74,7 @@ public class Item {
      * @param book  Το βιβλίο του αντιτύπου
      * @see Book#addItem(Item)
      */
-    public void setBook(Book book) {
+    /*public void setBook(Book book) {
         if (this.book != null) {
             this.book.friendItems().remove(this);
         }
@@ -79,15 +82,15 @@ public class Item {
         if (this.book != null) {
             this.book.friendItems().add(this);
         }
-    }
+    }*/
 
     /**
      * Επιστρέφει το βιβλίο του αντιτύπου.
      * @return Το βιβλίο του αντιτύπου
      */
-    public Book getBook() {
+    /*public Book getBook() {
         return book;
-    }
+    }*/
 
 
     /**
@@ -183,7 +186,13 @@ public class Item {
         setState(ItemState.LOST);
     }
 
+    public int getBookId() {
+        return bookId;
+    }
 
+    public void setBookId(int bookId) {
+        this.bookId = bookId;
+    }
 
     @Override
     public String toString() {

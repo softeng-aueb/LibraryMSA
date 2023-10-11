@@ -9,8 +9,9 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.mgiandia.library.Fixture;
 import com.mgiandia.library.IntegrationBase;
-import com.mgiandia.library.representation.BookRepresentation;
+import com.mgiandia.library.catalog.representation.BookRepresentation;
 
+import com.mgiandia.library.loans.resource.LibraryUri;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

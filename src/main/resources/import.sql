@@ -25,11 +25,11 @@ insert into bookauthors(bookid,authorid) values (1001, 2003);
 insert into bookauthors(bookid,authorid) values (1002, 2003);
 
 
-insert into items (itemno, bookno, itemstate) values (1, 1000, 'AVAILABLE');
-insert into items (itemno, bookno, itemstate) values (2, 1001, 'AVAILABLE');
-insert into items (itemno, bookno, itemstate) values (3, 1002, 'AVAILABLE');
-insert into items (itemno, bookno, itemstate) values (4, 1000, 'AVAILABLE');
-insert into items (itemno, bookno, itemstate) values (5, 1001, 'AVAILABLE');
+insert into items (itemno, bookId, itemstate) values (1, 1000, 'AVAILABLE');
+insert into items (itemno, bookId, itemstate) values (2, 1001, 'AVAILABLE');
+insert into items (itemno, bookId, itemstate) values (3, 1002, 'AVAILABLE');
+insert into items (itemno, bookId, itemstate) values (4, 1000, 'AVAILABLE');
+insert into items (itemno, bookId, itemstate) values (5, 1001, 'AVAILABLE');
 
 insert into borrowercategories(id,description,lendingitems,lendingdays,dailyfineamount,dailyfinecurrency) values (3000, 'Καθηγητής',6,180,0,'EUR');
 insert into borrowercategories(id,description,lendingitems,lendingdays,dailyfineamount,dailyfinecurrency) values (3001, 'Φοιτητής',4,7,5,'EUR');

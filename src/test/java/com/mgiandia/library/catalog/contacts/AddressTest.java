@@ -3,7 +3,7 @@ package com.mgiandia.library.catalog.contacts;
 
 import com.mgiandia.library.loans.contacts.Address;
 import com.mgiandia.library.loans.contacts.ZipCode;
-import com.mgiandia.library.util.BasicEqualTester;
+import com.mgiandia.library.loans.util.BasicEqualTester;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

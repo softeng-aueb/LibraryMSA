@@ -60,7 +60,7 @@ public class JPAQueriesTest {
         Assertions.assertEquals(EXPECTED_ADDRESS_PATISSION,results.size());
     }
     
-    @SuppressWarnings("unchecked")
+    /*@SuppressWarnings("unchecked")
     @Test
     @TestTransaction 
     public void implicitJoin2() {
@@ -86,5 +86,5 @@ public class JPAQueriesTest {
         @SuppressWarnings("unused")
         List<Book> results = query.getResultList();  
         Assertions.assertEquals(EXPECTED_ITEM_NUMBER,query.getResultList().size());
-    }
+    }*/
 }

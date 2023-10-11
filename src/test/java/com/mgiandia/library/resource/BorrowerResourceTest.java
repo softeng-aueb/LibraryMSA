@@ -8,13 +8,13 @@ import java.util.List;
 import com.mgiandia.library.Fixture;
 import com.mgiandia.library.Fixture.BorrowerCategories;
 import com.mgiandia.library.IntegrationBase;
-import com.mgiandia.library.representation.BorrowerCategoryRepresentation;
-import com.mgiandia.library.representation.BorrowerRepresentation;
+import com.mgiandia.library.loans.representation.BorrowerCategoryRepresentation;
+import com.mgiandia.library.loans.representation.BorrowerRepresentation;
 
+import com.mgiandia.library.loans.resource.LibraryUri;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import io.quarkus.test.TestTransaction;
 import io.quarkus.test.junit.QuarkusTest;
 import io.restassured.common.mapper.TypeRef;
 import io.restassured.http.ContentType;

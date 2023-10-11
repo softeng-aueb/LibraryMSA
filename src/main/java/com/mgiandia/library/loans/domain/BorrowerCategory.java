@@ -2,7 +2,8 @@ package com.mgiandia.library.loans.domain;
 
 import java.time.LocalDate;
 
-import com.mgiandia.library.util.Money;
+import com.mgiandia.library.loans.persistence.MoneyCustomType;
+import com.mgiandia.library.loans.util.Money;
 
 import jakarta.persistence.AttributeOverride;
 import jakarta.persistence.Column;
@@ -39,7 +40,7 @@ public class BorrowerCategory {
 
     @Embedded
     @org.hibernate.annotations.CompositeType(
-            value=com.mgiandia.library.persistence.MoneyCustomType.class)
+            value= MoneyCustomType.class)
     @AttributeOverride(name = "amount", column = @Column(name = "dailyfineamount"))
 	@AttributeOverride(name = "currency", column = @Column(name = "dailyfinecurrency"))
     private Money dailyFine;

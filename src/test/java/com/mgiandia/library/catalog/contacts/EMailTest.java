@@ -1,7 +1,7 @@
 package com.mgiandia.library.catalog.contacts;
 
 import com.mgiandia.library.loans.contacts.EmailAddress;
-import com.mgiandia.library.util.BasicEqualTester;
+import com.mgiandia.library.loans.util.BasicEqualTester;
 import org.junit.jupiter.api.Test;
 
 

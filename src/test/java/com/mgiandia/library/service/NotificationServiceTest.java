@@ -2,6 +2,7 @@ package com.mgiandia.library.service;
 
 import java.time.LocalDate;
 
+import com.mgiandia.library.loans.service.NotificationService;
 import jakarta.inject.Inject;
 
 import org.junit.jupiter.api.Test;
@@ -20,10 +21,10 @@ import com.mgiandia.library.loans.contacts.EmailMessage;
 import com.mgiandia.library.loans.domain.Borrower;
 import com.mgiandia.library.loans.domain.Item;
 import com.mgiandia.library.loans.domain.Loan;
-import com.mgiandia.library.persistence.BorrowerRepository;
-import com.mgiandia.library.persistence.ItemRepository;
-import com.mgiandia.library.persistence.LoanRepository;
-import com.mgiandia.library.util.SystemDateStub;
+import com.mgiandia.library.loans.persistence.BorrowerRepository;
+import com.mgiandia.library.loans.persistence.ItemRepository;
+import com.mgiandia.library.loans.persistence.LoanRepository;
+import com.mgiandia.library.loans.util.SystemDateStub;
 
 @QuarkusTest
 public class NotificationServiceTest extends IntegrationBase {
@@ -38,7 +39,7 @@ public class NotificationServiceTest extends IntegrationBase {
 	
 	
 	@Inject
-	NotificationService notificationService;
+    NotificationService notificationService;
 	
 	private EmailProviderStub provider;
 

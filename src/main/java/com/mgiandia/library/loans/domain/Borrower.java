@@ -6,6 +6,8 @@ import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.mgiandia.library.loans.persistence.EMailCustomType;
+import com.mgiandia.library.loans.persistence.TelphoneNumberCustomType;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Embedded;
@@ -20,7 +22,7 @@ import jakarta.persistence.Table;
 import com.mgiandia.library.loans.contacts.Address;
 import com.mgiandia.library.loans.contacts.EmailAddress;
 import com.mgiandia.library.loans.contacts.TelephoneNumber;
-import com.mgiandia.library.util.Money;
+import com.mgiandia.library.loans.util.Money;
 /**
  * Ο δανειζόμενος.
  * @author Νίκος Διαμαντίδης
@@ -36,12 +38,12 @@ public class Borrower  {
     private int borrowerNo;
     
     @org.hibernate.annotations.Type(
-            value=com.mgiandia.library.persistence.TelphoneNumberCustomType.class)
+            value= TelphoneNumberCustomType.class)
     @Column(name="phonenumber", length=20)
     private TelephoneNumber telephone;
     
     @org.hibernate.annotations.Type(
-            value=com.mgiandia.library.persistence.EMailCustomType.class)
+            value= EMailCustomType.class)
     @Column(name="email", length=40)
     private EmailAddress eMail;
     

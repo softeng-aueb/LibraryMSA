@@ -3,6 +3,8 @@ package com.mgiandia.library.catalog.domain;
 import com.mgiandia.library.catalog.contacts.Address;
 import com.mgiandia.library.catalog.contacts.EmailAddress;
 import com.mgiandia.library.catalog.contacts.TelephoneNumber;
+import com.mgiandia.library.loans.persistence.EMailCustomType;
+import com.mgiandia.library.loans.persistence.TelphoneNumberCustomType;
 import jakarta.persistence.*;
 
 
@@ -23,12 +25,12 @@ public class Publisher {
     private String name;
     
     @org.hibernate.annotations.Type(
-            value=com.mgiandia.library.persistence.TelphoneNumberCustomType.class)
+            value= TelphoneNumberCustomType.class)
     @Column(name="phonenumber")
     private TelephoneNumber telephone;
     
     @org.hibernate.annotations.Type(
-            value=com.mgiandia.library.persistence.EMailCustomType.class)
+            value= EMailCustomType.class)
     @Column(name="email")
     private EmailAddress eMail;
     

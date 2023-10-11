@@ -3,10 +3,9 @@ package com.mgiandia.library.loans.domain;
 
 import java.time.LocalDate;
 
-import com.mgiandia.library.LibraryException;
-import com.mgiandia.library.loans.domain.*;
-import com.mgiandia.library.util.SystemDate;
-import com.mgiandia.library.util.SystemDateStub;
+import com.mgiandia.library.loans.LibraryException;
+import com.mgiandia.library.loans.util.SystemDate;
+import com.mgiandia.library.loans.util.SystemDateStub;
 
 
 import org.junit.jupiter.api.AfterEach;

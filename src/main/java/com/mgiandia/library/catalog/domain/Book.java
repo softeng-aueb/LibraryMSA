@@ -5,6 +5,7 @@ import java.util.Set;
 
 
 import com.mgiandia.library.loans.domain.Item;
+import com.mgiandia.library.catalog.persistence.ISBNCustomType;
 import jakarta.persistence.*;
 
 
@@ -23,7 +24,7 @@ public class Book {
     private Integer id;    
     
     @org.hibernate.annotations.Type(
-            value=com.mgiandia.library.persistence.ISBNCustomType.class)
+            value= ISBNCustomType.class)
     @Column(name="isbn", length = 20, nullable=false)
     private ISBN isbn;
     
@@ -42,10 +43,10 @@ public class Book {
     private Publisher publisher;
     
     
-    @OneToMany(orphanRemoval=true, 
+    /*@OneToMany(orphanRemoval=true,
             cascade = CascadeType.ALL, 
             mappedBy="book", fetch=FetchType.LAZY)    
-    private Set<Item> items = new HashSet<Item>();
+    private Set<Item> items = new HashSet<Item>();*/
     
     @ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE }, 
             fetch=FetchType.LAZY)
@@ -175,9 +176,9 @@ public class Book {
      * τη μέθοδο {@link Book#removeItem(Item)}.
      * @return Αντίγραφο της συλλογής των αντιτύπων του βιβλίου
      */
-    public Set<Item> getItems() {
+    /*public Set<Item> getItems() {
         return new HashSet<Item>(items);
-    }
+    }*/
 
 
     /**
@@ -196,29 +197,29 @@ public class Book {
      * Προσθήκη ενός αντιτύπου ({@link Item}) στη συλλογή αντιτύπων του βιβλίου.
      * @param item Το αντίτυπο
      */
-    public void addItem(Item item) {
+    /*public void addItem(Item item) {
         if (item != null) {
             item.setBook(this);
         }
-    }
+    }*/
 
     /**
      * Απομάκρυνση ενός αντιτύπου ({@link Item}) από τη συλλογή αντιτύπων του βιβλίου.
      * @param item Το αντίτυπο
      */
-    public void removeItem(Item item) {
+    /*public void removeItem(Item item) {
         if (item != null) {
             item.setBook(null);
         }
-    }
+    }*/
 
     /**
      * Μη ενθυλακωμένη συλλογή των αντιτύπων του βιβλίου.
      * @return Τα αντίτυπα του βιβλίου
      */
-    public Set<Item> friendItems() {
+    /*public Set<Item> friendItems() {
         return items;
-    }
+    }*/
 
     /**
      * Προσθήκη ενός συγγραφέα ({@link Author}) στους συγγραφείς του βιβλίου.
